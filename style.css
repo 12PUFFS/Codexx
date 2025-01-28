@@ -6,6 +6,15 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat;
+    
 }
 
 .container{
@@ -13,3 +22,93 @@
     margin: 0 auto;
 }
 
+.wrapper{
+    background-image: url(/img/Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 952px;
+    object-fit: contain;
+    position: relative;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    margin-bottom: 314px;
+}
+
+.header .container{
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-list{
+     display: flex;
+     align-items: center;
+}
+
+.nav-item{
+    font-weight: 600;
+}
+
+.nav-item:not(:last-child){
+    margin-right: 32px;
+}
+
+ .hero{
+   
+    height: 322px;
+   width: 727px;
+    
+    display: block;
+}
+
+.block{
+    position: absolute;
+    height: 212px;
+    background: white;
+   font-family: Montserrat;
+   font-weight: medium;
+   font-size: 20px;
+   top: 850px;
+   width: 1216px;
+   border-radius: 8px;
+   bottom: 37px;
+   color: black;
+   padding: 40px;
+   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+   
+}
+
+.hero-title{
+    font-weight: medium;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.subtitle{
+    font-family: "Playfair Display";
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 16px;
+    letter-spacing: 0px;
+}
+
+.hero p{
+    font-weight: medium;
+    font-size: 18px;
+}
+
+.details{
+    background: #7F57F1;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-top: 32px;
+    display: block;
+    width: 143px;
+}
