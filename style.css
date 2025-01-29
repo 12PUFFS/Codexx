@@ -7,9 +7,13 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+a, ul ,li{
     color: white;
     list-style-type: none;
     box-sizing: border-box;
+
 }
 
 body{
@@ -65,11 +69,12 @@ body{
    width: 727px;
     
     display: block;
+    color: white;
 }
 
 .block{
     position: absolute;
-    height: 212px;
+   height: fit-content; 
     background: white;
    font-family: Montserrat;
    font-weight: medium;
@@ -79,9 +84,9 @@ body{
    border-radius: 8px;
    bottom: 37px;
    color: black;
-   padding: 40px;
-   box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
    
+   filter: drop-shadow( 0px 5px 5px  rgba(0, 0, 0, 0.587));
+    
 }
 
 .hero-title{
@@ -111,4 +116,119 @@ body{
     margin-top: 32px;
     display: block;
     width: 143px;
+}
+
+.block-text {
+    padding-bottom: 42px;
+    color: black;
+   position: relative;
+}
+
+input{
+    font-size: 20px;
+    font-weight: medium;
+    border: none;
+    padding-right: 10px;
+    width: 145px;
+}
+
+.block-text::after{
+    position: absolute;
+    top: 0;
+    content: "";
+    background-image: url(img/Search.png);
+    width: 24px;
+    height: 24px;
+    left: 150px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+
+    
+}
+
+button{
+    border: 1px solid #D0D5DD;
+    height: 44px;
+    width: 253px;
+    background: white;
+    display: flex;
+    border-radius: 6px;
+    align-items: center;
+    padding: 10px 14px;
+    position: relative;
+    
+}
+
+button::after{
+    position: absolute;
+    content: "";
+    background-image: url(img/Arrow-Down.png);
+    top: 10;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+
+}
+
+.button:hover{
+    background: white;
+}
+
+.dropdown-options{
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background: white;
+    
+    
+}
+
+.dropdown-options a{
+    padding: 10px 14px;
+
+}
+
+.tyt-search{
+    background: #7F57F1;
+    padding: 12px 99px;
+    border-radius: 8px;
+}
+
+.block{
+   padding: 40px 39px;
+}
+
+.tyt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.dropdown:hover .dropdown-options{
+    display: block;
+}
+
+.dropdown-options a{
+    display: block;
+    color: black;
+    width: 253px;
+   
+
+}
+
+.search{
+    background: #7F57F1;
+   
+}
+
+.dropdown-options a:hover{
+    color: #7F57F1;
+    background: white;
 }
