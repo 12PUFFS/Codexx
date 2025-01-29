@@ -7,24 +7,32 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 a, ul ,li{
     color: white;
     list-style-type: none;
-    box-sizing: border-box;
 
 }
 
 body{
     font-family: Montserrat;
-    height: 10000px;
+    
     
 }
+
+
+
+
+
 
 .container{
     max-width: 1216px;
     margin: 0 auto;
+
+          
+
 }
 
 .wrapper{
@@ -52,6 +60,13 @@ body{
     align-items: center;
     justify-content: space-between;
     
+}
+
+.main{
+   
+    display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Минимальная высота равна высоте окна */
 }
 
 .nav-list{
@@ -132,7 +147,7 @@ input{
     font-size: 20px;
     font-weight: medium;
     border: none;
-    padding-right: 10px;
+    
     width: 145px;
 }
 
@@ -231,8 +246,170 @@ button::after{
     background: #7F57F1;
    
 }
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
 
 .dropdown-options a:hover{
     color: #7F57F1;
     background: white;
+}
+
+.properties{
+    margin-top: 200px;
+}
+
+.properties h2{
+    color: #7F57F1;
+}
+
+.heading{
+    font-family: "Playfair Display";
+   text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.heading p{
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 18px;
+    margin-top: 24px;
+    color: #2F234F;
+    margin-bottom: 68px;
+}
+
+.heading h2{
+    color: #7F57F1;
+}
+
+.features .heading{
+    display: flex;
+    justify-content: start;
+}
+.features .heading h2{
+    padding-bottom: 42px;
+}
+
+
+.properties-block{
+    display: flex;
+}
+.bli{
+    margin-right: 32px;
+    width: 384px;
+    height: 557px;
+}
+
+.column img{
+    width: 384px;
+    height: 265px;
+}
+
+.column{
+    flex-wrap: wrap;
+    gap: 32px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.features-column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b h3{
+    padding-bottom: 16px;
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.b{
+    padding: 24px;
+ 
+    width: 594px;
+    border-radius: 8px;
+    
+    box-shadow:  5px 5px   #D0D5DD; ;
+    
+}
+.b:not(:last-child){
+    margin-bottom: 20px;
+}
+
+/* .column img:hover{
+    background: #000;
+} */
+
+
+.prefooter{
+    height: 416px;
+    display: flex;
+    justify-content: end;
+    color: white;
+    position: relative;
+    padding-top: 72px;
+}
+
+.prefooter h4{
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 8px;
+    
+}
+
+.outro{
+    background: #7F57F1;
+
+}
+.r{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.text input{
+    width: 414px;
+    padding: 16px 24px;
+    border-radius: 8px;
+    margin-top: 24px;
+    
+}
+
+.input a{
+    padding: 18px 50px;
+    background: #865CFE;
+}
+
+
+footer{
+    
+    color: black;
+
+   padding-bottom: 96px;
+    padding-top: 96px;
+}
+
+.footer-logo{
+margin-bottom: 24px;
+}
+
+.row h5 {
+    padding-bottom: 24px;
+}
+
+.row p{
+    padding-bottom: 8px;
+}
+
+.e{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
