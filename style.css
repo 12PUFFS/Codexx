@@ -18,6 +18,7 @@ a, ul ,li{
 
 body{
     font-family: Montserrat;
+    height: 10000px;
     
 }
 
@@ -34,12 +35,15 @@ body{
     height: 952px;
     object-fit: contain;
     position: relative;
+    
 }
 
 .header{
     background-color: rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(10px);
     margin-bottom: 314px;
+    position: sticky;
+    top: 0;
 }
 
 .header .container{
